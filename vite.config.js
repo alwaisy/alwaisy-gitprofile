@@ -9,7 +9,7 @@ import { VitePWA } from 'vite-plugin-pwa';
 export default defineConfig({
   // If you are deploying to https://<USERNAME>.github.io/, set base to '/'.
   // If you are deploying to https://<USERNAME>.github.io/<REPO>/, for example your repository is at https://github.com/<USERNAME>/<REPO>, then set base to '/<REPO>/'.
-  base: '/gitprofile/',
+  base: '/',
   plugins: [
     react(),
     VitePWA({
@@ -21,7 +21,8 @@ export default defineConfig({
         description: 'Personal Portfolio',
         icons: [
           {
-            src: 'logo.png',
+            // src: 'logo.png',
+            src: 'https://avatars.githubusercontent.com/u/102944304?v=4',
             sizes: '64x64 32x32 24x24 16x16 192x192 512x512',
             type: 'image/png',
           },
