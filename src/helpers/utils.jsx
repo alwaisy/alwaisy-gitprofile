@@ -1,5 +1,5 @@
-import colors from '../data/colors.json';
 import { hotjar } from 'react-hotjar';
+import colors from '../data/colors.json';
 
 export const getInitialTheme = (themeConfig) => {
   if (themeConfig.disableSwitch) {

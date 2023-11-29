@@ -4,10 +4,19 @@ const config = {
   github: {
     username: 'awaisalwaisy', // Your GitHub org/user name. (Required)
     sortBy: 'stars', // stars | updated
-    limit: 10, // How many projects to display.
+    limit: 5, // How many projects to display.
     exclude: {
-      forks: false, // Forked projects will not be displayed if set to true.
-      projects: [], // These projects will not be displayed. example: ['my-project1', 'my-project2']
+      forks: true, // Forked projects will not be displayed if set to true.
+      projects: [
+        'lib',
+        'proxyscrape-cms-dev',
+        'proxyscrape-frontend-vuejs',
+        'proxyscrape_',
+        'dolami-job-task',
+        'alpine-nuxt-studio',
+        'awaisalwaisy',
+        'curly-octo-giggle',
+      ], // These projects will not be displayed. example: ['my-project1', 'my-project2']
     },
   },
   social: {
@@ -23,7 +32,7 @@ const config = {
     stackoverflow: '19009169/awais-al-waissy', // format: userid/username
     // skype: '',
     telegram: 'awaisalwaisy',
-    // website: '',
+    website: 'https://amicoder.dev',
     phone: '',
     email: 'alwaisy@outlook.com',
   },
@@ -47,8 +56,16 @@ const config = {
   ],
   experiences: [
     {
-      company: 'Cryptum/MidChain Technologies · Full-time',
+      company: 'Dolami,Inc · Full-time',
       position: 'Frontend ReactJs Developer',
+      // Dec 2022 - May 2023 · 6 mos
+      from: 'May 2023',
+      to: 'Present',
+      companyLink: 'https://mid-chaintechnologies.com/',
+    },
+    {
+      company: 'Cryptum/MidChain Technologies · Full-time',
+      position: 'Frontend React/Vue Developer',
       // Dec 2022 - May 2023 · 6 mos
       from: 'December 2022',
       to: 'May 2023',
@@ -103,7 +120,7 @@ const config = {
       imageUrl: 'https://via.placeholder.com/250x250',
       link: 'https://example.com',
     }, */
-    {
+    /* {
       title: 'ProxyScrape - Loopbrackets',
       description: `There was a website stacked with traditional
         technologies like jQuery and PHP. My responsibility was to convert it into a
@@ -111,7 +128,7 @@ const config = {
       imageUrl:
         'https://raw.githubusercontent.com/awaisalwaisy/lib/main/lb-prscp.ico',
       link: 'https://proxyscrape-d.netlify.app/home',
-    },
+    }, */
   ],
   // Display blog posts from your medium or dev account. (Optional)
   blog: {
@@ -128,11 +145,11 @@ const config = {
     snippetVersion: 6,
   },
   themeConfig: {
-    defaultTheme: 'garden',
+    defaultTheme: 'dracula',
 
     // Hides the switch in the navbar
     // Useful if you want to support a single color mode
-    disableSwitch: false,
+    disableSwitch: true,
 
     // Should use the prefers-color-scheme media-query,
     // using user system preferences, instead of the hardcoded defaultTheme
