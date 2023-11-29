@@ -34,7 +34,7 @@ const config = {
     telegram: 'awaisalwaisy',
     website: 'https://amicoder.dev',
     phone: '',
-    email: 'alwaisy@outlook.com',
+    email: 'sayhi@alwaisy.dev',
   },
   resume: {
     fileUrl: '', // Empty fileUrl will hide the `Download Resume` button.
